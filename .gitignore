@@ -4,3 +4,11 @@ playwright-report/
 .env
 *.log
 .DS_Store
+
+# Root level screenshots (now organized in app folders)
+step-before-*.png
+login-page.png
+navigation-debug.png
+before-navigation-fixtures.png
+after-navigation-fixtures.png
+temp-screenshot.png
