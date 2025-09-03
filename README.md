@@ -91,39 +91,11 @@ Based on these parameters, the framework dynamically determines:
 
 ## Running Tests
 
-### Run all tests for Sauce Demo app in QA environment:
-
-```bash
-npm run test:sauce-demo
-```
-
 ### Run tests with custom parameters:
 
 ```bash
 APP=sauce-demo ENV=qa HEADLESS=false npx playwright test
 APP=sauce-demo ENV=qa HEADLESS=false npx playwright test --grep @smoke
-```
-
-### Run specific test types:
-
-```bash
-# E2E tests
-npm run test:sauce-demo:e2e
-
-# Performance tests
-npm run test:sauce-demo:performance
-
-# Visual tests
-npm run test:sauce-demo:visual
-
-# Accessibility tests
-npm run test:sauce-demo:accessibility
-```
-
-### Run tests with UI mode:
-
-```bash
-npm run test:ui -- --app=sauce-demo --env=qa
 ```
 
 ## Test Data
