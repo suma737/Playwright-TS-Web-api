@@ -81,8 +81,8 @@ This will install all required npm packages and Playwright browsers.
 
 The framework uses command-line parameters to determine which application and environment to test:
 
-- `--app`: Specifies the application to test (e.g., sauce-demo, generic)
-- `--env`: Specifies the environment to test against (e.g., qa, staging, prod)
+- `APP`: Specifies the application to test (e.g., sauce-demo, generic)
+- `ENV`: Specifies the environment to test against (e.g., qa, staging, prod)
 
 Based on these parameters, the framework dynamically determines:
 - Base URL for the application
