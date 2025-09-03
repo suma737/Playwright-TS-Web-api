@@ -81,7 +81,7 @@ test.describe('@error-handling Error Handling Examples', () => {
     
     try {
       // Take a screenshot and compare with a non-existent baseline
-      await page.screenshot({ path: 'temp-screenshot.png' });
+      await page.screenshot({ path: 'apps/sauce-demo/screenshots/temp/temp-screenshot.png' });
       
       // Simulate a visual comparison failure
       throw new Error('Visual comparison failed');

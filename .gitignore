@@ -12,3 +12,8 @@ navigation-debug.png
 before-navigation-fixtures.png
 after-navigation-fixtures.png
 temp-screenshot.png
+
+# Test-generated screenshots (but keep reference screenshots)
+apps/*/test-results/
+apps/*/screenshots/temp/
+

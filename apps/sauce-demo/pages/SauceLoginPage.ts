@@ -49,8 +49,8 @@ export class SauceLoginPage extends BasePage {
       await this.page.waitForTimeout(2000);
       
       // Take a screenshot to debug
-      await this.page.screenshot({ path: 'navigation-debug.png' });
-      console.log('Screenshot saved to navigation-debug.png');
+      await this.page.screenshot({ path: 'apps/sauce-demo/screenshots/navigation/navigation-debug.png' });
+      console.log('Screenshot saved to apps/sauce-demo/screenshots/navigation/navigation-debug.png');
       
       // Log the current URL
       const currentUrl = this.page.url();

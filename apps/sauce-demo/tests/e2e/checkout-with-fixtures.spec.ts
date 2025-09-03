@@ -36,8 +36,8 @@ test.describe('@e2e @checkout Checkout Flow', () => {
     page.on('requestfailed', req => console.error(`REQUEST FAILED: ${req.url()}, ${req.failure()?.errorText}`));
     
     // Take screenshot before navigation
-    await page.screenshot({ path: 'before-navigation-fixtures.png' });
-    console.log('Screenshot saved to before-navigation-fixtures.png');
+    await page.screenshot({ path: 'apps/sauce-demo/screenshots/navigation/before-navigation-fixtures.png' });
+    console.log('Screenshot saved to apps/sauce-demo/screenshots/navigation/before-navigation-fixtures.png');
     
     // Direct navigation to the site
     console.log('Directly navigating to the site');
@@ -49,8 +49,8 @@ test.describe('@e2e @checkout Checkout Flow', () => {
       console.log(`Current URL after navigation: ${page.url()}`);
       
       // Take screenshot after navigation
-      await page.screenshot({ path: 'after-navigation-fixtures.png' });
-      console.log('Screenshot saved to after-navigation-fixtures.png');
+      await page.screenshot({ path: 'apps/sauce-demo/screenshots/navigation/after-navigation-fixtures.png' });
+      console.log('Screenshot saved to apps/sauce-demo/screenshots/navigation/after-navigation-fixtures.png');
       
       // Check if we're on the right page
       if (!page.url().includes('saucedemo.com')) {
@@ -77,7 +77,7 @@ test.describe('@e2e @checkout Checkout Flow', () => {
       console.log('beforeEach hook completed successfully');
     } catch (error) {
       console.error(`Navigation or login failed: ${error}`);
-      await page.screenshot({ path: 'navigation-error-fixtures.png' });
+      await page.screenshot({ path: 'apps/sauce-demo/screenshots/navigation/navigation-error-fixtures.png' });
       throw error;
     }
   });

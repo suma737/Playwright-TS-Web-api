@@ -47,9 +47,9 @@ async function debugNavigation() {
     console.log(`Navigation status: ${response?.status()} ${response?.statusText()}`);
     console.log(`Current URL: ${page.url()}`);
     
-    // Take a screenshot
-    await page.screenshot({ path: 'debug-approach1.png' });
-    console.log('Screenshot saved to debug-approach1.png');
+    // Take a screenshot before navigation
+    await page.screenshot({ path: 'apps/sauce-demo/screenshots/debug/debug-before-navigation.png' });
+    console.log('Screenshot saved to apps/sauce-demo/screenshots/debug/debug-before-navigation.png');
     
     // Wait to see if page loads
     await page.waitForTimeout(5000);
@@ -63,7 +63,8 @@ async function debugNavigation() {
       
       await page.waitForTimeout(5000);
       console.log(`After location.href, URL is: ${page.url()}`);
-      await page.screenshot({ path: 'debug-approach2.png' });
+      await page.screenshot({ path: 'apps/sauce-demo/screenshots/debug/debug-approach2.png' });
+      console.log('Screenshot saved to apps/sauce-demo/screenshots/debug/debug-approach2.png');
     }
     
     // Check if login form is visible
@@ -80,7 +81,8 @@ async function debugNavigation() {
       
       await page.waitForTimeout(5000);
       console.log(`After login, URL is: ${page.url()}`);
-      await page.screenshot({ path: 'debug-after-login.png' });
+      await page.screenshot({ path: 'apps/sauce-demo/screenshots/debug/debug-after-login.png' });
+      console.log('Screenshot saved to apps/sauce-demo/screenshots/debug/debug-after-login.png');
     }
     
   } catch (error) {
