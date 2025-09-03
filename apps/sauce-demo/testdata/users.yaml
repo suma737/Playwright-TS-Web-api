@@ -1,0 +1,84 @@
+---
+# Sauce Demo User Credentials
+# Contains user credentials for different environments
+
+# User types with environments as second level
+standardUser:
+  qa:
+    username: standard_user
+    password: secret_sauce
+    firstName: sfgjahfg
+    lastName: Doe
+    postalCode: "12345"
+  staging:
+    username: standard_user
+    password: secret_sauce
+    firstName: sbdajhf
+    lastName: Doe
+    postalCode: "12345"
+  prod:
+    username: standard_user
+    password: secret_sauce
+    firstName: John
+    lastName: Doe
+    postalCode: "12345"
+
+lockedOutUser:
+  qa:
+    username: locked_out_user
+    password: secret_sauce
+    firstName: jhsgdja
+    lastName: Smith
+    postalCode: "54321"
+  staging:
+    username: locked_out_user
+    password: secret_sauce
+    firstName: Jane
+    lastName: Smith
+    postalCode: "54321"
+  prod:
+    username: locked_out_user
+    password: secret_sauce
+    firstName: Jane
+    lastName: Smith
+    postalCode: "54321"
+
+problemUser:
+  qa:
+    username: problem_user
+    password: secret_sauce
+    firstName: Bob
+    lastName: Johnson
+    postalCode: "67890"
+  staging:
+    username: problem_user
+    password: secret_sauce
+    firstName: Bob
+    lastName: Johnson
+    postalCode: "67890"
+  prod:
+    username: problem_user
+    password: secret_sauce
+    firstName: Bob
+    lastName: Johnson
+    postalCode: "67890"
+
+performanceGlitchUser:
+  qa:
+    username: performance_glitch_user
+    password: secret_sauce
+    firstName: Alice
+    lastName: Williams
+    postalCode: "09876"
+  staging:
+    username: performance_glitch_user
+    password: secret_sauce
+    firstName: Alice
+    lastName: Williams
+    postalCode: "09876"
+  prod:
+    username: performance_glitch_user
+    password: secret_sauce
+    firstName: Alice
+    lastName: Williams
+    postalCode: "09876"
