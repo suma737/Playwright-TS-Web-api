@@ -97,6 +97,13 @@ Based on these parameters, the framework dynamically determines:
 npm run test:sauce-demo
 ```
 
+### Run tests with custom parameters:
+
+```bash
+APP=sauce-demo ENV=qa HEADLESS=false npx playwright test
+APP=sauce-demo ENV=qa HEADLESS=false npx playwright test --grep @smoke
+```
+
 ### Run specific test types:
 
 ```bash
@@ -117,12 +124,6 @@ npm run test:sauce-demo:accessibility
 
 ```bash
 npm run test:ui -- --app=sauce-demo --env=qa
-```
-
-### Run tests with custom parameters:
-
-```bash
-npx playwright test --app=sauce-demo --env=staging
 ```
 
 ## Test Data
